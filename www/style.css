@@ -133,7 +133,7 @@ body p {
 #text1 {
 	/*width: 784px;*/
 	width:auto;
-	height:448px;
+	height:auto;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:14px;
 	left: 313px;
