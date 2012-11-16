@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+ul, ol, dl { /* Из-за различий между браузерами рекомендуется обнулять поля в списках. Для согласованности можно указать нужные величины либо здесь, либо в элементах списка (LI, DT, DD), которые они содержат. Помните, что сделанное здесь последовательно включается в список .nav, если только не будет прописан более конкретный селектор. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* удаление верхнего поля позволяет обойти проблему выхода полей за границы содержащего их контейнера DIV. Оставшееся нижнее поле отделит его от любых последующих элементов. */
+	padding-right: 15px;
+	padding-left: 15px; /* добавление боковых полей к элементам внутри контейнеров DIV, а не к самим контейнерам избавляет от необходимости расчетов рамочной модели. В качестве альтернативы можно использовать вложенный контейнер DIV с боковыми полями. */
+}
+a img { /* этот селектор убирает стандартную синюю рамку, которая появляется у изображений в некоторых браузерах, если вокруг изображения есть ссылка */
+	border: none;
+}
+
+
+body {
+	margin:0px; /* Обнуляем отсутпы*/
+	padding:0px; /* Обнуляем отсутпы*/
+	font-size: 14px; /* Размер шрифта для всего сайта*/
+	font-family:"Times New Roman", Times, serif; /* Тип шрифта*/
+	background-color:#270E38;	
+	font-style: normal;
+	font-weight: lighter;
+	text-decoration: none;
+	height:100%;
+		
+	
+}
+#container {
+  width: 945px; /* Ширина слоя */
+  margin-right: auto; /* Отступ справа */
+  margin-left: auto; /* Отступ слева */
+  height:inherit;
+   
+  background-image:url(images/fon.jpg);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+ }
+#content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+
+	
+   }
+
+#page {
+	
+    width: 945 px;
+	height: 1890 px;
+	background-repeat:repeat-x;
+}
+	
+#header {
+	background-image: url(images/head.jpg);
+	width: 970px; /* ширина шапки*/
+	height: 342px; /* высота шапки*/
+	background-repeat:no-repeat; /* запрещаем размножение изображения по осям Х и Y */
+	top: 0 px;
+}
+
+
+		* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+list-style-type: none;
+background-image:url(images/navi_bg.png);
+height: 59px;
+width: 778px;
+margin: auto;
+opacity:0.8;
+}
+li {
+float: left;
+}
+ul a {
+background-image:url(images/navi_bg_divider.png);
+background-repeat: no-repeat;
+background-position: right;
+padding-right: 32px;
+padding-left: 32px;
+display: block;
+line-height: 59px;
+text-decoration: none;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 21px;
+color: #C9C;
+}
+ul a:hover {
+color: #FFF;
+}
+#logo {
+	position:absolute;
+	width:461px;
+	height:312px;
+	background-image:url(images/butter.png);
+	left: 647px;
+	top: 32px;
+
+}
+
+body p {
+
+}
+
+#title {
+	position:absolute;
+	width: 119px;
+	height: 35 px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:24px;
+	left: 278px;
+	top: 301px;
+	color:#FFF;
+	border:hidden;
+}
+#text {
+	position:absolute;
+	width: 784px;
+	height:44px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	left: 614px;
+	color:#639;
+	top: 360px;
+	border:hidden;
+
+}
+#text1 {
+	/*width: 784px;*/
+	width:auto;
+	height:448px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	left: 313px;
+	color:#306;
+	top: 632px;
+	border:hidden;
+	text-align:justify;
+	text-justify:inter-word;
+	margin-left:10px;
+	margin-right:10px;
+}
+#text2 {
+	/*width: 784px;*/
+	width:900px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	left: 313px;
+	color:#306;
+	top: 632px;
+	border:hidden;
+	text-align:justify;
+	margin-left:10px;
+	margin-right:10px;
+}
+#text3 {
+	padding-left:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	color:#306;
+	border:hidden;
+	text-align:inherit;
+	margin-left:5px;
+	margin-right:5px;
+}
+table {
+	font: normal 11px verdana, arial, helvetica, sans-serif;
+	color: #333;
+	background: transparent;
+	text-align:left;
+	  }
+caption {
+  font: bold 16px arial, helvetica, sans-serif;
+  background: transparent;
+  padding:6px 4px 8px 0px;
+  color: #CC00FF;
+  
+}
+thead, tfoot {
+background:url(bg1.png) repeat-x;
+text-align:left;
+}
+thead th, tfoot th {
+padding:5px;
+
+}
+table a {
+color: #603;
+text-decoration:none;
+}
+table a:hover {
+	text-decoration:underline;
+}
+tr.odd {
+background: 
+}
+tbody th, tbody td {
+padding:5px;
+background: transparent;
+}
+#wrapper {
+ min-height: 100%;
+ height: auto !important;
+ height: 100%;
+ margin: 0 auto -40px; 
+   }
+#maps {
+	margin:10px; 
+	padding:10px; 
+
+}
+  
+#push {
+	clear:both;
+	height: 70px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#639;
+	margin-left:10px;
+	margin-top:10px;
+}
+/*================== Футер ===============*/
+#footer {
+	/*position:absolute;*/
+	padding: 10px; /* Поля вокруг текста */
+	width: 925px; /* ширана подвала*/
+	background-repeat:no-repeat;
+	height:40px;/* высота подвала*/
+	background-image: url(images/back-4.jpg);
+	margin-left:auto;
+	margin-right:auto;
+	color: #FFF;
+}
+#foot-menu {
+	margin-top: 17px; /* отступ сверху для меню */
+	font-size: 18px; /* Устанавливаем тип шрифта */
+	margin-bottom: 30px; /* отступ снизу от меню*/
+	width: 925px; /* ширина меню*/
+	font: Times New Roman;
+	text-align:center;
+	left: 80px;
+	top: 1150px;
+	
+}
+#foot-menu a {
+		text-decoration:none; /* убираем нижнее подчеркивание с сылок в меню*/
+	color:#FFF; /* устанавливаем цвет шрифта ссылок меню*/
+	padding-right: 20px; /* отсупы справа между ссылками в меню*/
+	font-family: "Times New Roman", Times, serif;
+	margin-top:auto;
+}
+#foot-menu a:hover {
+	text-decoration:underline; /* задаем нижнее подчеркивание для ссылок в меню при наведении на них курсором*/
+}
+
+#text {
+	font-size: 16px; /* размер шрифта внутри контейнера*/
+	display:block; /*определяет свойство показа элемента*/
+	width:546px; /* ширна контейнера */
+}
+#text a {
+	color:#b14757; /* устанавливаем цвет шрифта ссылок в контейнере*/
+}
+
+#hovergallery img{
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 10px 10px 5px 10px; /*Интервалы между изображениями*/
+
+}
+
+#hovergallery img:hover{
+	text-align:center;
+	-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.1); /*Opera: масштабирование*/
+	box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+	opacity: 1;
+}
+
+	#inputArea
+	{
+		
+	    font-family: Arial, Sans-Serif;
+	    font-size: 13px;
+	    background-color: transparent;
+	    padding: 10px;
+	    width:310px;
+		margin-left:10px;
+		
+	}
+	#inputArea input, #inputArea textarea
+	{
+	    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	    font-size: 13px;
+	    margin-bottom: 5px;
+	    display: block;
+	    padding: 4px;
+	    width: auto;
+	}
+
+        .activeField
+        {
+            background-image: none;
+            background-color: #ffffff;
+            border: solid 1px #306;
+        }
+        .idle
+        {
+	    border: solid 1px #85b1de;
+	    background-image: url( 'gray_bg.png' );
+	    background-repeat: repeat-x;
+	    background-position: top;
+		background-color: #ffffff;
+        }
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
